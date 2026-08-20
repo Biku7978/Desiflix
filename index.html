@@ -33,16 +33,21 @@
             font-size: 24px;
             color: #ff334b;
             letter-spacing: 1px;
+-webkit-text-stroke-width: medium;
             font-weight: 700;
         }
         .container {
             width: 100%;
             max-width: 480px;
+        }
+        /* Video Gallery Card Style */
+        .video-card {
             background: #181a20;
             padding: 12px;
             border-radius: 14px;
             box-shadow: 0 8px 25px rgba(0,0,0,0.8);
             border: 1px solid #262933;
+            margin-bottom: 20px;
         }
         .video-wrapper {
             position: relative;
@@ -78,6 +83,7 @@
         }
         .banner-ad {
             margin-top: 15px;
+            margin-bottom: 20px;
             text-align: center;
             width: 100%;
             display: flex;
@@ -91,20 +97,39 @@
         <h1>DESIFLIX</h1>
     </div>
 
-    <div class="container">
-        <div class="video-wrapper">
-            <!-- Video Player -->
-            <video controls controlsList="nodownload" playsinline>
-                <source src="https://files.catbox.moe/xhd7kw.mp4" type="video/mp4">
-                Aapka browser video tag support nahi karta.
-            </video>
-        </div>
-        <div class="video-info">
-            <div class="badge">HD 1080p</div>
-            <div class="video-title" style="margin-top: 8px;">
-                <a href="https://www.effectivecpmnetwork.com/hp6sba4nr?key=2ebb762d48a9ac56d1524837d696991b" target="_blank" style="color: #ff334b; text-decoration: none;">Exclusive Video Player (Click Here)</a>
+    <div class="container" id="video-container">
+        
+        <!-- ========== NEW VIDEO KAHAN ADD KAREIN ========== -->
+        <!-- Jab bhi naya video dalna ho, niche wale pure box (.video-card) ko copy karke sabse upar paste kar dena, aur naya video link aur title dal dena! -->
+        
+        <!-- Video 2 (Latest Video - Sabse Upar Rahega) -->
+        <div class="video-card">
+            <div class="video-wrapper">
+                <video controls controlsList="nodownload" playsinline>
+                    <source src="NAYA_VIDEO_LINK_YAHAN_DALO.mp4" type="video/mp4">
+                    Aapka browser video tag support nahi karta.
+                </video>
+            </div>
+            <div class="video-info">
+                <div class="badge">NEW HD</div>
+                <div class="video-title" style="margin-top: 8px;">Yahan Naye Video Ka Title Likho</div>
             </div>
         </div>
+
+        <!-- Video 1 (Purana Video - Niche Shift Ho Jayega) -->
+        <div class="video-card">
+            <div class="video-wrapper">
+                <video controls controlsList="nodownload" playsinline>
+                    <source src="https://files.catbox.moe/xhd7kw.mp4" type="video/mp4">
+                    Aapka browser video tag support nahi karta.
+                </video>
+            </div>
+            <div class="video-info">
+                <div class="badge">HD 1080p</div>
+                <div class="video-title" style="margin-top: 8px;">Exclusive Video Player (Part 1)</div>
+            </div>
+        </div>
+
     </div>
 
     <!-- 320x50 Banner Ad Container -->
