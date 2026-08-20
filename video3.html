@@ -5,61 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desiflix - New Video</title>
     
-    <!-- Adsterra Scripts (Head Section - Total 3 Scripts) -->
+    <!-- Adsterra Scripts (Head Section) -->
     <script src="https://pl30940417.effectivecpmnetwork.com/e5/77/8e/e5778e9e5c561533954cd756ccf72c49.js"></script>
     <script src="https://pl30940420.effectivecpmnetwork.com/05/fe/3e/05fe3e59668f1a80bd39f362c994e453.js"></script>
-    <!-- Agar aapke paas 3ri script head ke liye hai, toh aap yahan rakh sakte hain, filhal baki 2 niche hain -->
 
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: sans-serif; background-color: #0f1015; color: #ffffff; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 10px; }
         .container { width: 100%; max-width: 600px; }
-        .video-card { background: #181a20; padding: 10px; border-radius: 12px; margin-bottom: 20px; }
+        .video-card { background: #181a20; padding: 8px; border-radius: 10px; margin-bottom: 15px; }
         
+        /* Video player ko chhota aur compact kar diya hai taaki ads dikhein */
         .video-wrapper {
             position: relative;
             width: 100%;
             background: #000;
-            border-radius: 8px;
+            border-radius: 6px;
             overflow: hidden;
         }
         .video-wrapper video {
             width: 100%;
             height: auto;
-            max-height: 550px;
+            max-height: 280px; /* Isse video chhota rahega aur jagah bachegi */
             display: block;
-            border-radius: 8px;
+            border-radius: 6px;
+            margin: 0 auto;
         }
         
-        .video-info { padding: 15px 5px; }
+        .video-info { padding: 10px 5px; }
         .banner-ad { margin: 15px 0; text-align: center; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Adsterra Extra Script (Body ke shuru me agar koi ho) -->
-        
         <div class="video-card">
             <div class="video-wrapper">
                 <!-- Direct HTML5 Video Player with Catbox Link -->
-                <video controls autoplay playsinline preload="metadata">
+                <video controls playsinline preload="metadata">
                     <source src="https://files.catbox.moe/3dgzky.mp4" type="video/mp4">
                     Aapka browser video tag ko support nahi karta.
                 </video>
             </div>
             <div class="video-info">
-                <div style="background:#ff334b; display:inline-block; padding:2px 8px; font-size:12px; border-radius:4px;">NEW HD</div>
-                <div style="font-size:16px; font-weight:bold; margin-top:5px;">Exclusive New Video</div>
+                <div style="background:#ff334b; display:inline-block; padding:2px 8px; font-size:11px; border-radius:4px;">NEW HD</div>
+                <div style="font-size:15px; font-weight:bold; margin-top:4px;">Exclusive New Video</div>
             </div>
         </div>
 
-        <!-- Adsterra Banner & Extra Scripts (Total 3 scripts yahan manage ki hain) -->
+        <!-- Adsterra Banner -->
         <div class="banner-ad">
             <script async="async" data-cfasync="false" src="https://pl30940418.effectivecpmnetwork.com/1e0f5cf0afb83ed4e15e7596dd239784/invoke.js"></script>
             <div id="container-1e0f5cf0afb83ed4e15e7596dd239784"></div>
         </div>
-
     </div>
 
 </body>
