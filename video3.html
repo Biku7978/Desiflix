@@ -50,15 +50,19 @@
         .video-wrapper {
             position: relative;
             width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
             border-radius: 10px;
             overflow: hidden;
             background: #000;
         }
-        video {
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
-            display: block;
-            outline: none;
+            height: 100%;
+            border: none;
         }
         .video-info {
             padding: 12px 5px 5px 5px;
@@ -98,10 +102,8 @@
     <div class="container">
         <div class="video-card">
             <div class="video-wrapper">
-                <video controls controlsList="nodownload" playsinline>
-                    <source src="https://bit.ly/4zq1QPC" type="video/mp4">
-                    Aapka browser video tag support nahi karta.
-                </video>
+                <!-- Google Drive Embed Player -->
+                <iframe src="https://drive.google.com/file/d/1FVHYbWlVN46B0LmIoGBfqA1kVy0BEmZX/preview" allow="autoplay" allowfullscreen></iframe>
             </div>
             <div class="video-info">
                 <div class="badge">NEW HD</div>
@@ -129,5 +131,4 @@
     <script type="text/javascript" src="https://www.highperformanceformat.com/b3a254a692c510ab5137c3a3ff40c71d/invoke.js"></script>
 
 </body>
-                      </html>
-
+</html>
